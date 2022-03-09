@@ -1,5 +1,6 @@
 .projectsBlock {
-    background-color: #394f38;
+    background-color: #1f1f20;
+    padding: 100px 0;
 }
 
 .projectsContainer {
@@ -9,7 +10,10 @@
 }
 
 .title {
-    background-color: #fcc57e;
+    background-color: #eeeef5;
+}
+.title h2 {
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .projects {
@@ -19,5 +23,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+@media screen and (max-width: 1129px) {
+        .projects {
+            justify-content: center;
+        }
+}
 

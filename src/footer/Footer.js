@@ -8,10 +8,10 @@ function Footer() {
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
                 <h2 className={style.title}>Andrei Mazurenka</h2>
                 <div className={style.socialIcons}>
-                    <div className={style.socialIcon}></div>
-                    <div className={style.socialIcon}></div>
-                    <div className={style.socialIcon}></div>
-                    <div className={style.socialIcon}></div>
+                    <div className={style.socialIcon}> </div>
+                    <div className={style.socialIcon}> </div>
+                    <div className={style.socialIcon}> </div>
+                    <div className={style.socialIcon}> </div>
                 </div>
                 <span className={style.copyright}>All rights reserved</span>
             </div>
