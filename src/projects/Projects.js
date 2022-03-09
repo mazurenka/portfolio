@@ -2,17 +2,25 @@ import React from "react";
 import style from './Projects.module.css'
 import styleContainer from '../common/styles/Container.module.css'
 import Project from "./project/Project";
+import Title from "../common/components/title/Title";
+import todoImage from "./../assets/image/todolist.jpg"
+import socialImage from "./../assets/image/social-network.jpg"
 
 function Projects() {
+    const social = {
+        backgroundImage: `url(${socialImage})`
+    }
+    const todolist = {
+        backgroundImage: `url(${todoImage})`
+    }
+
     return (
         <div className={style.projectsBlock}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-                <div className={style.title}>
-                    <h2>Projects</h2>
-                </div>
+                <Title text={'Projects'}/>
                 <div className={style.projects}>
-                    <Project title={'SocialNetwork'} description={'React, Redux'}/>
-                    <Project title={'TodoList'} description={'TypeScript'}/>
+                    <Project style={social} title={'SocialNetwork'} description={'React, Redux'}/>
+                    <Project style={todolist} title={'TodoList'} description={'TypeScript'}/>
                 </div>
             </div>
         </div>
