@@ -1,0 +1,18 @@
+.hireBlock {
+    background-color: #fcc57e;
+}
+
+.hireContainer {
+    flex-direction: column;
+    justify-content: center;
+}
+.title {
+    background-color: cadetblue;
+}
+.hireBtn {
+    padding: 10px 20px;
+    background-color: #f3941b;
+}
+
+
+

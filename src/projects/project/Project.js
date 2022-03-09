@@ -5,8 +5,10 @@ function Project(props) {
 
     return (
         <div className={style.project}>
+            <div className={style.image}>
+                <a className={style.viewBtn}>Check project</a>
+            </div>
             <h3>{props.title}</h3>
-            <a href={'https://github.com/mazurenka'} target="_blank" >Check Project</a>
             <span className={style.description}>{props.description}</span>
         </div>
     );
