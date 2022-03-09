@@ -1,11 +1,14 @@
-.project {
-    width: 450px;
-    background-color: #252527;
-    display: flex;
-    flex-direction: column;
-}
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
 
-.image {
+
+.project {
+  width: 450px;
+  background-color: $bgSecondColor;
+  display: flex;
+  flex-direction: column;
+
+  .image {
     height: 300px;
     display: flex;
     justify-content: center;
@@ -14,50 +17,63 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-}
 
-.image::before {
-    position: absolute;
-    content: '';
-    background-color: #1f1f20;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.4;
-}
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: #1f1f20;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+    }
 
-.viewBtn {
-    background-color: #ddddee;
-    padding: 10px 20px;
-    position: relative;
-    z-index: 1;
-}
-.viewBtn:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
+    .viewBtn {
+      background-color: $primaryColor;
+      padding: 10px 20px;
+      position: relative;
+      z-index: 1;
+      color: $textColor;
 
-.projectInfo {
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .projectInfo {
     padding: 25px 20px;
+
+    .projectTitle {
+      @include text('Josefin Sans', sans-serif, 16px, 1.2);
+      letter-spacing: 1px;
+      margin: 0 0 5px;
+    }
+
+    .description {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.8;
+      font-weight: 400;
+      font-size: 12px;
+      color: $textColor;
+    }
+  }
 }
 
-.projectTitle {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-    margin: 0 0 5px;
-    line-height: 1.2;
-    color: #fff;
-}
 
-.description {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.0;
-    font-weight: 400;
-    font-size: 12px;
-    color: #fff;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
