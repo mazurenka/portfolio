@@ -5,6 +5,8 @@ import Main from "./main/Main";
 import Skills from "./skills/Skills";
 import Projects from "./projects/Projects";
 import Contacts from "./contacts/Contacts";
+import Hire from "./hire/Hire";
+import Footer from "./footer/Footer";
 
 function App() {
     return (
@@ -13,7 +15,9 @@ function App() {
             <Main/>
             <Skills/>
             <Projects/>
+            <Hire/>
             <Contacts/>
+            <Footer/>
         </div>
     );
 }
